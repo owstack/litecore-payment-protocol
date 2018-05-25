@@ -7,22 +7,22 @@ Payment protocol is implemented as a separate module and you must add it to your
 For node projects:
 
 ```
-npm install bitcore-lib --save
-npm install bitcore-payment-protocol --save
+npm install ltc-lib --save
+npm install ltc-payment-protocol --save
 ```
 
 For client-side projects:
 
 ```
-bower install bitcore-lib --save
-bower install bitcore-payment-protocol --save
+bower install ltc-lib --save
+bower install ltc-payment-protocol --save
 ```
 
 ## Make Payment Details
 Here the merchant's server will construct the payment details message:
 
 ```javascript
-var PaymentProtocol = require('bitcore-payment-protocol');
+var PaymentProtocol = require('@owstack/ltc-payment-protocol');
 var now = Date.now() / 1000 | 0;
 
 // construct the payment details
@@ -141,7 +141,7 @@ var transactions = payment.get('transactions');
 var refund_to = payment.get('refund_to');
 var memo = payment.get('memo');
 
-// send the transaction to the bitcoin network
+// send the transaction to the litecoin network
 ```
 
 ## Send a Payment Acknowledgement

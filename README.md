@@ -1,30 +1,30 @@
-Bitcore Payment Protocol
+Ltc Payment Protocol
 =======
 
-[![NPM Package](https://img.shields.io/npm/v/bitcore-payment-protocol.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-payment-protocol)
-[![Build Status](https://img.shields.io/travis/bitpay/bitcore-payment-protocol.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcore-payment-protocol)
-[![Coverage Status](https://img.shields.io/coveralls/bitpay/bitcore-payment-protocol.svg?style=flat-square)](https://coveralls.io/r/bitpay/bitcore-payment-protocol)
+[![NPM Package](https://img.shields.io/npm/v/ltc-payment-protocol.svg?style=flat-square)](https://www.npmjs.org/package/ltc-payment-protocol)
+[![Build Status](https://img.shields.io/travis/owstack/ltc-payment-protocol.svg?branch=master&style=flat-square)](https://travis-ci.org/owstack/ltc-payment-protocol)
+[![Coverage Status](https://img.shields.io/coveralls/owstack/ltc-payment-protocol.svg?style=flat-square)](https://coveralls.io/r/owstack/ltc-payment-protocol)
 
-A module for [bitcore](https://github.com/bitpay/bitcore) that implements [Payment Protocol](https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki) and other related BIPs.
+A module for [ltc](https://github.com/owstack/ltc) that implements [Payment Protocol](https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki) and other related BIPs.
 
 ## Getting Started
 
 This library is distributed in both the npm and bower packaging systems.
 
 ```sh
-npm install bitcore-lib
-npm install bitcore-payment-protocol
+npm install @owstack/ltc-lib
+npm install @owstack/ltc-payment-protocol
 ```
 
 ```sh
-bower install bitcore-lib
-bower install bitcore-payment-protocol
+bower install ltc-lib
+bower install ltc-payment-protocol
 ```
 
-There are many examples of how to use it on the developer guide [section for payment protocol](https://bitcore.io/api/paypro). For example, the following code would verify a payment request:
+There are many examples of how to use it on the developer guide [section for payment protocol](https://ltc.io/api/paypro). For example, the following code would verify a payment request:
 
 ```javascript
-var PaymentProtocol = require('bitcore-payment-protocol');
+var PaymentProtocol = require('@owstack/ltc-payment-protocol');
 
 var body = PaymentProtocol.PaymentRequest.decode(rawbody);
 var request = new PaymentProtocol().makePaymentRequest(body);
@@ -41,10 +41,10 @@ var verified = request.verify();
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/bitpay/bitcore/blob/master/CONTRIBUTING.md) on the main bitcore repo for information about how to contribute.
+See [CONTRIBUTING.md](https://github.com/owstack/ltc-lib/blob/master/CONTRIBUTING.md) on the main ltc-lib repo for information about how to contribute.
 
 ## License
 
-Code released under [the MIT license](https://github.com/bitpay/bitcore/blob/master/LICENSE).
+Code released under [the MIT license](https://github.com/owstack/ltc-lib/blob/master/LICENSE).
 
-Copyright 2013-2015 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.
+Copyright 2017 Open Wallet Stack.

@@ -1,8 +1,7 @@
 {
-  "name": "bitcore-payment-protocol",
-  "version": "1.2.1",
-  "description": "Payment Protocol (BIP70 and related) support for bitcore",
-  "author": "BitPay <dev@bitpay.com>",
+  "name": "@owstack/ltc-payment-protocol",
+  "version": "0.0.1",
+  "description": "Payment Protocol (BIP70 and related) support for ltc.",
   "main": "index.js",
   "scripts": {
     "lint": "gulp lint",
@@ -11,45 +10,28 @@
     "build": "gulp",
     "rootcerts": "node ./update-rootcerts.js"
   },
-  "contributors": [
-    {
-      "name": "Christopher Jeffrey",
-      "email": "chjeffrey@gmail.com"
-    },
-    {
-      "name": "Manuel Araoz",
-      "email": "manuelaraoz@gmail.com"
-    },
-    {
-      "name": "Ryan X. Charles",
-      "email": "ryan@bitpay.com"
-    },
-    {
-      "name": "Linus Unnebäck",
-      "email": "linus@folkdatorn.se"
-    },
-    {
-      "name": "Esteban Ordano",
-      "email": "eordano@gmail.com"
-    }
-  ],
   "keywords": [
     "bitcoin",
-    "bitcore"
+    "ltc",
+    "payment protocol",
+    "BIP70"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitpay/bitcore-payment-protocol.git"
+    "url": "https://github.com/owstack/ltc-payment-protocol.git"
   },
   "browser": "lib/browser.js",
   "dependencies": {
-    "asn1.js": "=4.5.2",
-    "bitcore-lib": "^0.14.0",
-    "jsrsasign": "=5.0.10",
+    "@owstack/ltc-lib": "^0.0.8",
+    "asn1.js": "=4.9.1",
+    "asn1.js-rfc3280": "=4.0.0",
+    "asn1.js-rfc5280": "=2.0.0",
+    "bs58": "^4.0.1",
+    "jsrsasign": "=8.0.4",
     "protobufjs": "=5.0.1"
   },
   "devDependencies": {
-    "bitcore-build": "git://github.com/bitpay/bitcore-build.git#a93a9970e3a0b3f948309730d4e4af5100dddf5a",
+    "@owstack/ows-build": "^0.0.3",
     "brfs": "^1.2.0",
     "chai": "~1.10.0",
     "gulp": "^3.8.10",

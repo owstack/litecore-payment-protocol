@@ -1,5 +1,3 @@
 'use strict';
-
-var gulp_bitcore = require('bitcore-build');
-
-gulp_bitcore('payment-protocol');
+var owsTasks = require('@owstack/ows-build');
+owsTasks('ltc', 'payment-protocol');
