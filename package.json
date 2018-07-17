@@ -1,6 +1,6 @@
 {
   "name": "@owstack/ltc-payment-protocol",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Payment Protocol (BIP70 and related) support for ltc.",
   "main": "index.js",
   "scripts": {
